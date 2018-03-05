@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{473DF874-B803-4326-BB5A-660B98B184FA}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="gamecredits/popup.js">
+    <Files>
+      <File FileName="gamecredits/main.html" Line="8" Column="1" />
+      <File FileName="gamecredits/manifest.json" Line="7" Column="32" />
+      <File FileName="gamecredits/popup.js" Line="9" Column="39" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.gamecredits PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
