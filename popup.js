@@ -1,5 +1,14 @@
+//Should We Do A Popup
+var host = window.location.hostname;
+
+if( checkURL(host) == 1 ){
+  var div1 = document.createElement("div"); 
+  div1.className = "gc-notification";
+  div1.innerHTML = "<h1>Earn GAME For Your Purchase</h1>"; 
+  document.body.appendChild(div1);
+  }
 document.addEventListener('DOMContentLoaded', function () {
-		document.querySelector('button').addEventListener('click', main);      
+	//		document.querySelector('button').addEventListener('click', main);      
 		var os = '';
 
 		chrome.runtime.getPlatformInfo(function(info) {
@@ -13,34 +22,13 @@ document.addEventListener('DOMContentLoaded', function () {
 				}
 		});
 });
-
-function main() {
-var source = document.getElementById('source').value;
-chrome.runtime.getPlatformInfo(function(info) {
-document.getElementById("result").innerHTML = info.os;
-});
-	//if(info.os == 'mac'){
-	
-	//} else if (info.os == 'win'){
-//document.getElementById("result").innerHTML = info.os;
-	
-//	} else if (info.os == 'linux'){
-	
-//	}
-
+function checkURL(host){
+if(host == 'gamecredits.com'){
+    alert('match');
+    return 1;
 }
-
-
-/*function returnOS(){
-alert(1);
-	chrome.runtime.getPlatformInfo(function(info) {
-    // Display host OS in the console
-    alert(1);
-	  console.log(info.os);
-    return (info.os);
-  });
-}*/
-
+return 0;
+}
 function getCurrentTabUrl(callback) {
   // Query filter to be passed to chrome.tabs.query - see
   // https://developer.chrome.com/extensions/tabs#method-query

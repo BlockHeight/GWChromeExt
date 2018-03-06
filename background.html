@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script src="js/background.js"></script>
+    
+	</head>
+	<body>
+        <script>
+            chrome.browserAction.onClicked.addListener(function(tab) {
+            chrome.tabs.executeScript({
+                code: 'document.body.style.backgroundColor="red"'
+            });
+        });
+        </script>
+    </body>
+</html>
