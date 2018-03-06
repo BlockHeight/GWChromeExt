@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 function checkURL(host){
 if(host == 'gamecredits.com'){
-    alert('match');
+//    alert('match');
     return 1;
 }
 return 0;
